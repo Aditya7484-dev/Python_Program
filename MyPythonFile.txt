@@ -1,0 +1,5 @@
+It's my first file from python.
+Aur sb thik hai.
+kya aaj kl chal rha hai.
+sb toh thik hi hoga na.
+Is line ko append krna hai.Is line ko append krna hai.Is line ko append krna hai.
