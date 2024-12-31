@@ -54,7 +54,7 @@ import random
 
 # Third problem----------------------------------------------------------------------------------
 
-# And this function will creating txt files within TableFile
+# #And this function will creating txt files within TableFile
 
 # def Gentable(n):
 #   table = ""

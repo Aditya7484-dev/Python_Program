@@ -1,5 +1,6 @@
-import random 
-# Question number 1
+import random
+from random import randint  
+# Question number 1--------------------------------------
 # class Programmer:
 #   Company="Microsoft"
 #   name="Aditya Kumar"
@@ -26,7 +27,7 @@ import random
 # class Calculator:
 #   def __init__(lemcho,square,cube,squareroot):
 #     lemcho.square= (square*square)
-#     lemcho.cube= (cube*cube*cube)
+#     lemcho.cube= (cube**3)
 #     lemcho.squareroot= (squareroot**0.5)
     
 # S=int(input("Enter number for it's Square: "))
@@ -100,5 +101,5 @@ Tbt2=input("Enter your destination: ")
 t=Train(Tn1,Tn2)
 t.bookticket(Tbt1,Tbt2)
 t.fairtax(Tbt1,Tbt2)
-t.coach()
+t.coach() 
 t.getstatus(random.choice(["Bandarpur Jn","Chamgadarpur Jn","Karela Singh jn"])) 
