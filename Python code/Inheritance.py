@@ -57,35 +57,59 @@
 
 #Super() Method-----------------------------------------------------------------------------
 
-class Aditya:
-  def __init__(lemcho):
-    print("This is a Parent class.")
+# class Aditya:
+#   def __init__(lemcho):
+#     print("This is a Parent class.")
 
-class Aman(Aditya):
-  def __init__(lemcho):
-    super().__init__()
-    print("This is the first child class.")
+# class Aman(Aditya):
+#   def __init__(lemcho):
+#     super().__init__()
+#     print("This is the first child class.")
 
-class Baman(Aman):
-  a=43
-  def __init__(lemcho):
-    super().__init__()
-    print(f"This is another child class. And it's value is {lemcho.a}")
+# class Baman(Aman):
+#   a=43
+#   def __init__(lemcho):
+#     super().__init__()
+#     print(f"This is another child class. And it's value is {lemcho.a}")
     
-o=Baman()
-o.a=29
+# o=Baman()
+# o.a=29
 
-o.__init__()
+# o.__init__()
 
-class Aditya:
-  a=74 #class attribute
+# class Aditya:
+#   a=74 #class attribute
   
-  @classmethod #This is called decorator which give preference to class declared value to be used instead of instance attribute 
+#   @classmethod #This is called decorator which give preference to class declared value to be used instead of instance attribute  
+#   def aditya(cls): #Here cls is used because we use the class attribute 
+#     print(f"My name is Aditya {cls.a}") 
+    
+#   @property #This is also a decorator 
+#   def course(lemcho):
+#     return lemcho.courseName
   
-  def aditya(cls): #Here cls is used because we use the class attribute 
-    print(f"My name is Aditya {cls.a}") 
+#   @course.setter #This is too
+#   def course(lemcho,value):
+#     lemcho.courseName=value  
   
-o=Aditya()
-o.a=65 #It's an instance attribute and it has preference more than class attribute
-o.aditya()
+# o=Aditya()
+# o.a=65 ,"""It's an instance attribute and it has preference more than class attribute until there is no @classmethod comstructor"""
 
+# o.course='BCA'
+# print(o.course)
+# o.aditya()
+
+class Operator:
+  def __init__(lemcho,n):
+    lemcho.n = n
+  
+  # def __add__(lemcho,num):
+  #   return lemcho.n + num.n 
+  
+  def __str__(lemcho):
+    return lemcho.n
+   
+z=Operator('Aditya')
+m=Operator(3)
+k=Operator(34)
+print(z)
