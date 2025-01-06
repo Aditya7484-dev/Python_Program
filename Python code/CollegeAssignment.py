@@ -99,14 +99,15 @@
 #   print("Even")
 # else:
 #   print("Not even") 
-def Rectangle(lenth,width):
-  area=lenth*width
-  return area
+# ------------------------------
+# def Rectangle(lenth,width):
+#   area=lenth*width
+#   return area
 
-num1=Rectangle(14,12)
-num2=Rectangle(13,8)
+# num1=Rectangle(14,12)
+# num2=Rectangle(13,8)
 
-if(num1>num2):
-  print("Area of first rectangle is greater")
-else:
-  print("Area of second rectangle is greater")
+# if(num1>num2):
+#   print("Area of first rectangle is greater")
+# else:
+#   print("Area of second rectangle is greater")

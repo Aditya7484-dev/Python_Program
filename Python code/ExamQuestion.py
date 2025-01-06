@@ -62,3 +62,17 @@
 # else:
 #   print("Second rectangle is greater")
 #---------------------------------------
+# Armstrong Number
+num=int(input("Enter a number: "))
+temp=str(num)
+numPower=len(str(abs(num)))
+sum=0
+for i in temp:
+  j=int(i)
+  k=int(numPower)
+  sum+=j**k
+
+if(num==sum):
+  print(f'{num} is an armstrong number.')
+else:
+  print(f'{num} is not an armstrong number.')
