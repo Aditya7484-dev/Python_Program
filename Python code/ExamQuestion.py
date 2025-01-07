@@ -26,22 +26,15 @@
 #      fact=num*Factorial(num-1)
 #      return fact
 # res=f'Factorial of {num} is {Factorial(num)}'
-# print(res)
-# ---------------------------------------------
-# Fibonacci Series 
-# num=int(input("Enter a number of terms: "))
-# for i in range(0,num+1,1):
-#   a=0
-#   b=1
-#   if(i==0):
-#     print(a)
-#   elif(i==1):
-#     print(b)
+# print(res) 
+# --------------------
 # li=[1,7,9,12,16]
 # print(li[0:3])  
 # print(li[0:-1])  
 # print(li[0::-1])  
 # print(li[-1:-4]) 
+
+# -------------------------------
  
 # class Rectangle:
 #   def __init__(self,width,height):
@@ -61,18 +54,66 @@
 #   print("First rectangle is greater")
 # else:
 #   print("Second rectangle is greater")
-#---------------------------------------
-# Armstrong Number
-num=int(input("Enter a number: "))
-temp=str(num)
-numPower=len(str(abs(num)))
-sum=0
-for i in temp:
-  j=int(i)
-  k=int(numPower)
-  sum+=j**k
 
-if(num==sum):
-  print(f'{num} is an armstrong number.')
-else:
-  print(f'{num} is not an armstrong number.')
+# Armstrong Number---------------------------------------
+
+# num=int(input("Enter a number: "))
+# temp=str(num)
+# numPower=len(str(abs(num)))
+# sum=0
+# for i in temp:
+#   j=int(i)
+#   k=int(numPower)
+#   sum+=j**k
+
+# if(num==sum):
+#   print(f'{num} is an armstrong number.')
+# else:
+#   print(f'{num} is not an armstrong number.')
+
+# prime or not------------------------------
+
+# num=int(input('Enter a number: '))
+
+# if(num==1):
+#   print('1 is neither a prime nor a composite number.')
+# elif(num==2):
+#   print('2 is not a prime number.')
+# else :
+#   for i in range(2,num-1,1):
+#     if(num%i==0):
+#       print(f'{num} is not a prime number.')
+#       break
+  
+#   else:
+#     print(f'{num} is a prime number.')
+
+# Palindrome Number---------
+
+# num=int(input('Enter a number: '))
+# temp=str(num)
+# k=int(temp[::-1])
+# if(num==k):
+#   print('Palindrome')
+# else:
+#   print('Not Palindrome')
+
+# fibonacci Series---------------------------------
+
+# num=int(input('Enter a number: '))
+# a=0
+# b=1
+# for i in range(num):
+#   print(a,end="\n") 
+#   a,b=b,a+b
+
+# Factorial
+# num=int(input("Enter a number: "))
+# temp=num
+# fact=1
+# for i in range(0,num,1):
+#   fact*=temp
+#   temp=temp-1
+# print(f'Factorial of {num} is {fact}')
+
+# Practise a question
