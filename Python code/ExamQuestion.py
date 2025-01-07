@@ -117,3 +117,25 @@
 # print(f'Factorial of {num} is {fact}')
 
 # Practise a question
+# class Animal:
+#   def __init__(self,name,beha):
+#     self.name=name
+#     self.beha=beha
+  
+#   name='Doggy'
+#   beha='Barkie'
+  
+#   @classmethod
+#   def GoShow(cls):
+#     return f'Oh! little {cls.name} you always {cls.beha}'
+  
+# p=Animal('Buro','Dancing')
+# print(p.GoShow())
+
+# class Student:
+#   @staticmethod
+#   def is_adult(age):
+#     return age>=18
+
+# print(Student.is_adult(20))
+# print(Student.is_adult(16))
