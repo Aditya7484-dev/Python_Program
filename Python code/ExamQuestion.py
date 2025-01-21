@@ -90,9 +90,9 @@
 
 # Palindrome Number---------
 
-# num=int(input('Enter a number: '))
-# temp=str(num)
-# k=int(temp[::-1])
+# num=input('Enter a string: ')
+# temp=num
+# k=temp[::-1]
 # if(num==k):
 #   print('Palindrome')
 # else:
@@ -139,3 +139,61 @@
 
 # print(Student.is_adult(20))
 # print(Student.is_adult(16))
+# -------------
+# num1=int(input("Enter a number: "))
+# num2=int(input("Enter a number: "))
+# num3=int(input("Enter a number: "))
+# if(num1>num2):
+#   if(num1>num3):
+#     print(f'{num1} is greatest')
+#   else:
+#     print(f'{num3} is greatest')
+# elif(num2>num3):
+#   print(f'{num2} is greatest')
+# else:
+#   print(f'{num3} is gratest')
+
+# lst=[1,2,3,4,15]
+# k=lst
+# for i in range(0,len(lst),1):
+#   k[i]=k[i]**2
+# print(k)
+# lnum=int(input('Enter minimum number: '))
+# unum=int(input('Enter maximum number: '))
+# for i in range(lnum,unum+1,1):
+#   for j in range(1,11,1):
+#     print(f'{i} X {j} = {i*j}')
+#   print('')
+# num=int(input('Enter a year: '))
+# if(num%4==0):
+#   print('Leap Year')
+# else:
+#   print('Not A Leap Year')
+# def fibo(n):
+#   if n<=1:
+#     return n
+#   else:
+#     return fibo(n-1)+fibo(n-2)
+  
+# numTerm=int(input("Enter a term : "))
+# for i in range(1,numTerm+1,1):
+#   print(fibo(numTerm))
+# num=int(input("Enter a number: "))
+# temp=str(num)
+# sum=0
+# for i in temp:
+#   k=int(i)
+#   sum+=k
+# print(f"{sum} is sum of digits of {num}")
+post=input("Write a sentence: ")
+lst={}
+
+for i in post:
+  key=i
+  for j in i:
+    if(j==''):
+      pass
+    else:
+      value=len(j)
+  lst[key]=value
+
