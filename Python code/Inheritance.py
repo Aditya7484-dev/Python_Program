@@ -77,39 +77,47 @@
 
 # o.__init__()
 
-# class Aditya:
-#   a=74 #class attribute
+class Aditya:
+  a=74 #class attribute
   
-#   @classmethod #This is called decorator which give preference to class declared value to be used instead of instance attribute  
-#   def aditya(cls): #Here cls is used because we use the class attribute 
-#     print(f"My name is Aditya {cls.a}") 
+  @classmethod #This is called decorator which give preference to class declared value to be used instead of instance attribute  
+  def aditya(cls): #Here cls is used because we use the class attribute 
+    print(f"My name is Aditya {cls.a}") 
     
-#   @property #This is also a decorator 
-#   def course(lemcho):
-#     return lemcho.courseName
+  @property #This is also a decorator 
+  def course(lemcho):
+    return lemcho.courseName
   
-#   @course.setter #This is too
-#   def course(lemcho,value):
-#     lemcho.courseName=value  
+  @course.setter #This is too
+  def course(lemcho,value):
+    lemcho.courseName=value  
   
-# o=Aditya()
-# o.a=65 ,"""It's an instance attribute and it has preference more than class attribute until there is no @classmethod comstructor"""
+o=Aditya()
+o.a=65 ,"""It's an instance attribute and it has preference more than class attribute until there is no @classmethod comstructor"""
 
-# o.course='BCA'
-# print(o.course)
-# o.aditya()
+o.course='BCA'
+print(o.course)
+o.aditya()
 
-class Operator:
-  def __init__(lemcho,n):
-    lemcho.n = n
+# class Operator:
+#   def __init__(lemcho,n):
+#     lemcho.n=n
   
-  # def __add__(lemcho,num):
-  #   return lemcho.n + num.n 
+#   def __add__(lemcho,num):
+#     return lemcho.n + num.n
   
-  def __str__(lemcho):
-    return lemcho.n
-   
-z=Operator('Aditya')
-m=Operator(3)
-k=Operator(34)
-print(z)
+#   def __sub__(lemcho,num):
+#     return lemcho.n - num.n
+  
+#   def __mul__(lemcho,num):
+#     return lemcho.n * num.n
+  
+#   def __floordiv__(lemcho,num):
+#     return lemcho.n // num.n
+  
+# c=Operator(8)
+# d=Operator(8)
+# print(c+d)
+# print(c-d)
+# print(c*d)
+# print(c//d)
