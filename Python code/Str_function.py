@@ -1,4 +1,4 @@
-# name = input("enter a String :")
+# name = input("Enter a String :")
 
 # print(name[1:3]) ;"""Every string has 0 as index"""
 
