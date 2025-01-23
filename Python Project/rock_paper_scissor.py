@@ -6,7 +6,7 @@ computerChoice=random.choice([-1,0,1])
 
 playerChoice=int(input("Select a number -1,0 or 1: "))
 
-if(playerChoice == -1 or playerChoice == 1 or playerChoice == 1):
+if(playerChoice == -1 or playerChoice == 1 or playerChoice == 0):
 
   moves= {-1:'rock',0:'paper',1:'scissor'}
   #Here moves specifies
