@@ -1,6 +1,7 @@
 
 from typing import List,Tuple
-
+#----------------------------
+## Match-Case
 # def arithematicOperation(n1,n2,op):
 #   match op:
 #     case "add": 
@@ -43,3 +44,18 @@ from typing import List,Tuple
 # else:
 #   print(f"Length of list is greater than 3.")
 # --------------------------------------------------------------------
+# # Avance Use of dictionary 
+# dict1={'key1':1,'key2':9}
+# dict2={'key2':8,'key3':7}
+# mergedDict=dict1|dict2
+# print(mergedDict)
+# Advance form of 'with'
+# with (
+#   open("MyPythonFile.txt","r") as padh,
+#   open("Poem.txt","r") as padhFir
+#   ):
+#   f=padh.read()
+#   k=padhFir.read()
+  
+# print(f)
+# print(k)
