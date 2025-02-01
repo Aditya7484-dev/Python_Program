@@ -7,7 +7,7 @@ r=sr.Recognizer()
 engine=pyttsx3.init()
 
 voices = engine.getProperty('voices')
-engine.setProperty('voice', voices[1].id)
+engine.setProperty('voice', voices[0].id)
 
 def processCommand(c):
   if "open google" in c.lower():
@@ -16,8 +16,8 @@ def processCommand(c):
     webbrowser.open('https://www.youtube.com/')
   elif "open facebook" in c.lower():
     webbrowser.open('https://www.facebook.com/')
-  elif "open smashkarts" in c.lower():
-    webbrowser.open('https://smashkarts.io/')
+  elif "open smash karts" in c.lower():
+    webbrowser.open('https://smash karts.io/')
   elif c.lower().startswith("play"):
     song=c.lower().split(" ")[1]
     link=ml.music[song]
@@ -29,8 +29,8 @@ def speak(text):
   engine.runAndWait()
 
 if __name__=="__main__":
-  speak("Initializing Luci")
-  speak("Hi this is Luci assisstant")
+  speak("Initializing jarvis")
+  speak("Hi this is jarvis assisstant")
   
   while True:
     print("Say something")
@@ -44,9 +44,9 @@ if __name__=="__main__":
         
       word=r.recognize_google(audio)
       
-      if "Luci" in word.lower():
+      if "jarvis" in word.lower():
         # print("Poco Activated")
-        speak("Bol Gadhe")
+        speak("I'm listening")
         
         with sr.Microphone() as source:
           r.adjust_for_ambient_noise(source, duration=1)
