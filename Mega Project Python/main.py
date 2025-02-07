@@ -2,10 +2,10 @@ import speech_recognition as sr
 import webbrowser
 import pyttsx3
 import musicList as ml
-import requests
-from gtts import gTTS
-import pygame
-import os
+# import requests
+# from gtts import gTTS
+# import pygame
+# import os
 
 r=sr.Recognizer()
 engine=pyttsx3.init()
@@ -27,36 +27,10 @@ def processCommand(c):
     song=c.lower().split(" ")[1]
     link=ml.music[song]
     webbrowser.open(link)
-  elif "news" in c.lower():
-    r=requests.get(f"https://newsapi.org/v2/top-headlines?country=us&apiKey={newsApi}")
-    if r.status_code==200:
-      data=r.json()
-      articles=data.get('articles',[])
-      for article in articles:
-        speak(article['title'])
-
-def speak_old(text):
-  engine.say(text)
-  engine.runAndWait()
 
 def speak(text):
-  tts=gTTS(text)
-  tts.save('temp.mp3')
-  
-  # initialize pygame mixer
-  pygame.mixer.init()
-  
-  # Load the mp3 file 
-  pygame.mixer.music.load('temp.mp3')
-  
-  # Play the music
-  pygame.mixer.music.play()
-  
-  while pygame.mixer.music.get_busy():
-    pygame.time.Clock().tick(10)
-  
-  pygame.mixer.music.unload()
-  os.remove('temp.mp3')  
+  engine.say(text)
+  engine.runAndWait() 
 
 if __name__=="__main__":
   speak("Initializing jarvis")
