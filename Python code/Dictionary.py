@@ -21,5 +21,7 @@ Telephone={
 
 # print(Telephone.get('police'))
 # print("")
-for i in Telephone.items():
-     print(i)
+# for i in Telephone.items():
+#      print(i)
+
+print(Telephone.get("police"))

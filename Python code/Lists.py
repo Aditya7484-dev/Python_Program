@@ -1,7 +1,10 @@
-Friends = ["Priyanshu", "Pratyush","vivek"] ,"""List must be within '[]'. """
+Friends = ['Priyanshu', 'Pratyush','vivek']
+"""List must be within '[]'. """
 
-print(Friends)
+# print(Friends)
 print(type(Friends))
+
+print(Friends('Priyanshu'))
 
 # Friends.append("Aman")
 
